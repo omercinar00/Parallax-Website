@@ -3,11 +3,89 @@
     padding: 0;
 }
 
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+body {
+  background: #272727;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navMenu {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+  color: #000;
+  margin-right: 2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flexbox;
+  width: 80px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #832ae2;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #832ae2;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(140px);
+  transform: translateX(140px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(245px);
+  transform: translateX(245px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(355px);
+  transform: translateX(355px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+
 #clarusway{
-    background-image: url(./img/bg.jpg);
+    background-image: url(./img/moda.jpg);
     background-position: center;
-    background-size: cover;
-    background-repeat: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
@@ -62,15 +140,15 @@ p {
 
 
 #claruswaylogo {
-    background-image: url(./img/bg2.jpg);
+    background-image: url(./img/WhatsApp\ Görsel\ 2023-07-04\ saat\ 18.02.34.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-origin: initial;
     background-clip: initial;
     background-color: initial;
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 .kısım2 {
@@ -90,15 +168,16 @@ img {
 }
 
 #resim3 {
-    background: url(./img/bg3.jpg) no-repeat center center fixed;
+    background: url(./img/56216503-4e98-4528-8f9a-b353318465a3.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
 #claruswayteam {
-    background-image: url(./img/bg4.jpg);
+    background-image: url(./img/Ekran\ görüntüsü\ 2023-07-04\ 170018.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+
 }
